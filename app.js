@@ -11,7 +11,7 @@ let weather ={
         .then((response)=> {
             if(!response.ok){
                 alert("Weather Not Found.");
-                throw new Error("Weather Not Found");
+                throw new Error("Weather Not Found.");
 
             }
             return response.json();
@@ -30,7 +30,7 @@ let weather ={
 
         document.querySelector(".city").innerText = "Weather in " + name;
         document.querySelector(".icon").src = 
-        "https://openweathermap.org/img/wn/" + icon + ".png";
+         + icon + ".png";
 
         document.querySelector(".description").innerText=description;
         document.querySelector(".temp").innerText=temp + "°C";
